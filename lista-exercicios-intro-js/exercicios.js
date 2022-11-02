@@ -19,80 +19,100 @@ function imprimeMensagem() {
 // EXERCÍCIO 01
 function calculaAreaRetangulo() {
   // implemente sua lógica aqui
+  const altura = prompt('Digite a altura:')
+  const largura = prompt('Digite a largura:')
 
+  console.log(`A área do retângulo é ${altura * largura}cm.`)
 }
 
 // EXERCÍCIO 02
 function imprimeIdade() {
   // implemente sua lógica aqui
-
+  const anoAtual = prompt('Digite o ano atual:')
+  const anoNascimento = prompt('Digite o ano de nascimento:')
+  
+  console.log(`Sua idade é ${anoAtual - anoNascimento} anos.`)
 }
 
 // EXERCÍCIO 03
 function calculaIMC(peso, altura) {
   // implemente sua lógica aqui
-
+  return (peso / (altura * altura))
 }
 
 // EXERCÍCIO 04
 function imprimeInformacoesUsuario() {
   // implemente sua lógica aqui
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
-
+  const nome = prompt('Digite seu nome:')
+  const idade = prompt('Digite sua idade:')
+  const email = prompt('Digite seu email:')
+  console.log(`\"Meu nome é ${nome.toUpperCase}, tenho ${idade.toUpperCase}, e o meu email é ${email.toUpperCase}.\"`)
 }
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
-
+  const corUm = prompt('Digite sua primeira cor favorita:')
+  const corDois = prompt('Digite a sua segunda cor favorita:')
+  const corTres = prompt('Digite a sua terceira cor favorita:')
+  const listaCores = [corUm, corDois, corTres]
+  console.log(listaCores)
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-
+  novaString = string.toUpperCase
+  return novaString
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+  return custo / valorIngresso 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+  return string1.lenght === string2.lenght
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-
+  return array[0]
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
+  return array[array.lenght-1]
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+  const primeiroElemento = array[0]
+  const ultimoElemento = array[array.lenght-1]
+  return array.pop().shift().unshift(ultimoElemento).push(primeiroElemento)
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
+  return string1 == string2
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-
+  const anoAtual = prompt('Digite o ano atual:')
+  const anoNascimento = prompt('Digite o ano de nascimento:')
+  const anoIdentidade = prompt('Digite o ano de emissão da Carteira de Identidade:')
+  const idade = anoAtual - anoNascimento
+  console.log(`A carteira de identidade precisa ser renovada? ${idade }`)
 }
 
 // EXERCÍCIO 14
